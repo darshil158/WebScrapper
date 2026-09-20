@@ -3,7 +3,7 @@
  * Supports pause/resume/cancel, failed chapter retry, and concurrent scraping.
  */
 
-const { v4: uuidv4 } = require('uuid');
+const crypto = require('crypto');
 const EventEmitter = require('events');
 
 const JOB_STATUS = {
@@ -34,7 +34,7 @@ class JobQueue extends EventEmitter {
    * Create a new scraping job
    */
   createJob(novelInfo, chapters, options = {}) {
-    const jobId = uuidv4();
+    const jobId = crypto.randomUUID();
     const job = {
       id: jobId,
       novelInfo,

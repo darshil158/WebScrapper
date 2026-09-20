@@ -1,4 +1,4 @@
-const { v4: uuidv4 } = require('uuid');
+const crypto = require('crypto');
 
 /**
  * BaseAdapter — Abstract class defining the interface for all site adapters.
@@ -111,7 +111,7 @@ class BaseAdapter {
    * Helper: Generate unique ID
    */
   generateId() {
-    return uuidv4();
+    return crypto.randomUUID();
   }
 }
 
