@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440" role="img" aria-label="System architecture: React client, Express API, Playwright engine, adapters, cleaner, job queue, IndexedDB and EPUB generator">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0c24"/><stop offset="100%" stop-color="#0a1f2b"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c6cf0" stop-opacity="0.35"/><stop offset="100%" stop-color="#7c6cf0" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.32"/><stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.10"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8b83c9"/>
+    </marker>
+    <style>
+      .t { font-family: Inter, 'Segoe UI', system-ui, sans-serif; fill: #ece9ff; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .s { font-family: 'JetBrains Mono', Consolas, monospace; fill: #a3a0c9; font-size: 11.5px; text-anchor: middle; }
+      .h { font-family: Inter, system-ui, sans-serif; fill: #8b83c9; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+      .edge { stroke: #8b83c9; stroke-width: 2; fill: none; stroke-dasharray: 5 6; marker-end: url(#arr); }
+    </style>
+  </defs>
+
+  <rect width="1100" height="440" rx="18" fill="url(#bg)"/>
+
+  <!-- zone labels -->
+  <text class="h" x="40" y="36">BROWSER  ·  CLIENT</text>
+  <text class="h" x="470" y="36">NODE.JS  ·  SERVER</text>
+  <text class="h" x="880" y="36">EXTERNAL</text>
+
+  <!-- zone panels -->
+  <rect x="24" y="48" width="380" height="372" rx="14" fill="none" stroke="#7c6cf0" stroke-opacity="0.35" stroke-dasharray="3 6"/>
+  <rect x="440" y="48" width="400" height="372" rx="14" fill="none" stroke="#2dd4bf" stroke-opacity="0.35" stroke-dasharray="3 6"/>
+  <rect x="868" y="48" width="208" height="372" rx="14" fill="none" stroke="#fbbf24" stroke-opacity="0.35" stroke-dasharray="3 6"/>
+
+  <!-- CLIENT nodes -->
+  <g>
+    <rect x="52" y="76" width="324" height="70" rx="12" fill="url(#violet)" stroke="#7c6cf0"/>
+    <text class="t" x="214" y="105">React 19 + Vite UI</text>
+    <text class="s" x="214" y="126">Wizard · Queue · Library · Reader</text>
+  </g>
+  <g>
+    <rect x="52" y="170" width="152" height="70" rx="12" fill="url(#violet)" stroke="#7c6cf0"/>
+    <text class="t" x="128" y="200">Zustand</text>
+    <text class="s" x="128" y="220">theme · toasts · prefs</text>
+  </g>
+  <g>
+    <rect x="224" y="170" width="152" height="70" rx="12" fill="url(#violet)" stroke="#7c6cf0"/>
+    <text class="t" x="300" y="200">API Client</text>
+    <text class="s" x="300" y="220">fetch + timeouts</text>
+  </g>
+  <g>
+    <rect x="52" y="264" width="152" height="70" rx="12" fill="url(#violet)" stroke="#7c6cf0"/>
+    <text class="t" x="128" y="290">IndexedDB</text>
+    <text class="s" x="128" y="310">Dexie · local library</text>
+  </g>
+  <g>
+    <rect x="224" y="264" width="152" height="70" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="300" y="290">EPUB Generator</text>
+    <text class="s" x="300" y="310">JSZip · EPUB 3</text>
+  </g>
+  <g>
+    <rect x="52" y="350" width="324" height="48" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="214" y="380">📖  Novel.epub  (download)</text>
+  </g>
+
+  <!-- SERVER nodes -->
+  <g>
+    <rect x="468" y="76" width="344" height="60" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="640" y="102">Express 5 REST API</text>
+    <text class="s" x="640" y="122">helmet · cors · 14 routes</text>
+  </g>
+  <g>
+    <rect x="468" y="158" width="164" height="66" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="550" y="186">Adapter Registry</text>
+    <text class="s" x="550" y="206">first match wins</text>
+  </g>
+  <g>
+    <rect x="648" y="158" width="164" height="66" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="730" y="186">Job Queue</text>
+    <text class="s" x="730" y="206">pause · resume · retry</text>
+  </g>
+  <g>
+    <rect x="468" y="246" width="164" height="66" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="550" y="274">Browser Engine</text>
+    <text class="s" x="550" y="294">Playwright + stealth</text>
+  </g>
+  <g>
+    <rect x="648" y="246" width="164" height="66" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="730" y="274">Content Cleaner</text>
+    <text class="s" x="730" y="294">Cheerio + DOMPurify</text>
+  </g>
+  <g>
+    <rect x="468" y="334" width="344" height="64" rx="12" fill="url(#teal)" stroke="#2dd4bf"/>
+    <text class="t" x="640" y="360">Site Adapters</text>
+    <text class="s" x="640" y="380">FanMTL · WuxiaBox · WTR-Lab · Generic</text>
+  </g>
+
+  <!-- EXTERNAL -->
+  <g>
+    <rect x="892" y="120" width="160" height="80" rx="12" fill="#fbbf24" fill-opacity="0.12" stroke="#fbbf24"/>
+    <text class="t" x="972" y="152">Novel Sites</text>
+    <text class="s" x="972" y="174">Cloudflare-guarded</text>
+  </g>
+  <g>
+    <rect x="892" y="270" width="160" height="80" rx="12" fill="#fbbf24" fill-opacity="0.12" stroke="#fbbf24"/>
+    <text class="t" x="972" y="302">Chromium</text>
+    <text class="s" x="972" y="324">headless · randomised</text>
+  </g>
+
+  <!-- edges -->
+  <path class="edge" d="M376 111 H468"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M300 146 V170" ><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M640 136 V158" ><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M550 224 V246" ><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M632 279 H648" ><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  
+  <path class="edge" d="M972 270 V200"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M128 240 V264"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M204 299 H224"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M214 334 V350" ><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+
+  <!-- Registry -> Site Adapters (selection) & Adapters -> Engine (page driving) -->
+  <path class="edge" d="M468 191 H456 V366 H468" style="stroke:#2dd4bf"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <path class="edge" d="M530 334 V312" style="stroke:#2dd4bf"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <text x="640" y="415" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#7f7aa8">registry selects an adapter · the adapter drives the engine's page</text>
+
+  <!-- Engine -> Chromium (routed beneath Content Cleaner) -->
+  <path class="edge" d="M550 312 V322 H860 V310 H892" style="stroke:#fbbf24"><animate attributeName="stroke-dashoffset" values="22;0" dur="1.1s" repeatCount="indefinite"/></path>
+  <!-- Engine -> Cleaner already drawn (M632 279 H648) -->
+
+  <!-- data packets flowing client → server → site -->
+  <!-- request packet: UI -> API -> Registry -> Engine -> Chromium -> Site -->
+  <circle r="5" fill="#fff">
+    <animateMotion dur="6s" repeatCount="indefinite"
+      path="M376 111 H468 H640 V136 V158 H550 V224 V246 V312 V322 H860 V310 H892 M972 270 V200"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <!-- response packet: Site -> Chromium -> Engine -> Cleaner -> Queue -> API -> UI -->
+  <circle r="5" fill="#2dd4bf">
+    <animateMotion dur="6s" begin="3s" repeatCount="indefinite"
+      path="M972 200 V270 M892 310 H860 V322 H550 V312 V279 H648 V246 H730 V224 V158 H640 V136 V111 H468 H376"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="6s" begin="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
